@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: Cat
+title: Dog
 status: Published
 date: '2018-03-28'
 featuredImage: >-
