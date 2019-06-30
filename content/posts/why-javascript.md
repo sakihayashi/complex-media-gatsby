@@ -2,7 +2,7 @@
 template: SinglePost
 title: 何故JavaScriptなのか？
 status: Featured / Published
-date: '2018-03-27'
+date: 2019-07-01T04:00:00.000Z
 featuredImage: 'https://ucarecdn.com/94633346-778b-4474-8039-b18280ec73a3/'
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
@@ -27,8 +27,7 @@ The second paragraph. This is placeholder text that our web designers put here t
 
 JavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。
 
-![Test Image](https://ucarecdn.com/ac9898a0-413a-467b-95fa-0a9959c30710/)
-
+![プログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/)
 
 ### Unordered lists:
 
