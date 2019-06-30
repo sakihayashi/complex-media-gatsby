@@ -25,11 +25,11 @@ meta:
 
 The second paragraph. This is placeholder text that our web designers put here to make sure words appear properly on your website. _Italic_, **bold**, and `monospace`.
 
-JavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。
+JavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。まず下記の日本のプログラミング言語別の年収ランキングをチェックしてください。データは[ビズリーチが発表した求人検索エンジン「スタンバイ」調べ](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)からです。
 
-![プログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/)
+![プログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/ "プログラミング言語別年収")
 
-### Unordered lists:
+### プログラミング言語別年収 求人検索エンジン「スタンバイ」調べUnordered lists:
 
 * this one
 * that one
