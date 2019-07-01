@@ -27,9 +27,15 @@ The second paragraph. This is placeholder text that our web designers put here t
 
 JavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。まず下記の日本のプログラミング言語別の年収ランキングをチェックしてください。データは[ビズリーチが発表した求人検索エンジン「スタンバイ」調べ](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)からです。
 
-![プログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/ "プログラミング言語別年収")
+![日本のプログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/ "プログラミング言語別年収")
 
-### プログラミング言語別年収 求人検索エンジン「スタンバイ」調べUnordered lists:
+### プログラミング言語別年収 求人検索エンジン「スタンバイ」調べ
+
+![アメリカのプログラミング言語別年収 求人検索エンジン「DICE」調べ](https://ucarecdn.com/37ffac8c-46e1-45d1-a9cf-7f320a9967cc/ "アメリカのプログラミング言語別年収 求人検索エンジン「DICE」調べ")
+
+
+
+### Unordered lists:
 
 * this one
 * that one
