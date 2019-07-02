@@ -3,7 +3,7 @@ template: ComponentsPage
 slug: about
 title: アメリカ最先端の技術を学んで、勝とう
 featuredImage: 'https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/'
-subtitle: フルスタックエンジニアが発信するアメリカ最先端のウェブ開発情報サイト
+subtitle: フルスタックエンジニアが発信するアメリカ最先端、かつ分かりやすいウェブ開発情報サイト
 section1: >-
   ## ミッションは日本のIT企業やベンチャーを成功に導く意味ある情報発信です
 
@@ -13,14 +13,8 @@ section1: >-
   それがSEO　Search Engine Optimization サーチエンジンオプティマイゼーションと呼ばれており、企業のビジネスを成功させる鍵であり、残念ながらその主流言語であるJavaScriptさえ日本ではほとんど使われていない状態にあります。日本で一番よく使われているウェブ開発言語、Javaはアメリカでは１０年くらい前から使用頻度が格段に下がっていきました。
   しかし、アメリカではこの開発が目まぐるしく日々進化を遂げおり、次々と新しい製品が生み出せれているのです。
   こうした技術は時には半年くらいで次々とウェブ開発を変えてしまうようなサイクルで目まぐるしく発展しており、その説明が全て企業の英語のウェブサイトに書かれているのです。
-  ですから、英語の理解できない日本人のエンジニアにはとても使いにくいものとなっています。そこで、ウェブ開発にどうして最先端のものが必要なのか、そして日々開発されている製品の最新情報、英語でしか発表されていない使い方を即、日本語でお届けする情報サイトを作成しました。このサイトが他のサイトと違うのは、筆者がフルスタックエンジニアであり、エンジニアの視点から、エンジニアリングの情報をお届けできることです、また最新のものはより安価にITビジネスを行う為の技術でもありますので、アメリカ最先端の技術を取り入れて、あなたもライバル会社を出しぬきましょう。
+  ですから、英語の理解できない日本人のエンジニアにはとても使いにくいものとなっています。そこで、ウェブ開発にどうして最先端のものが必要なのか、そして日々開発されている製品の最新情報、英語でしか発表されていない使い方を即、日本語でお届けする情報サイトを作成しました。このサイトが他のサイトと違うのは、筆者がフルスタックエンジニアであり、エンジニアの視点から、エンジニアリングの情報をお届けできることです。また、分かりやすさにも拘り、開発者だけではなく、ビギナー、学生、IT企業のエンジニア以外の方にも読んで頂くように配慮しています。最新のものはより安価にITビジネスを行う為の技術でもありますので、アメリカ最先端の技術を取り入れて、あなたもライバル会社を出しぬきましょう。
 
-
-  [Dictumst a ultrices mi](https://friendly-colden-8caf2a.netlify.com/) a dignissim ad fermentum eget a nam et a blandit
-  scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam
-  vel est ut proin dis auctor. Suscipit sceler isque orci magna interdum vel
-  bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
-  vestibulum.
 section2: |-
   ## You can use videos, images and text.
 
