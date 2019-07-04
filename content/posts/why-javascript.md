@@ -1,24 +1,22 @@
 ---
 template: SinglePost
-title: 何故JavaScriptなのか？
+title: アメリカではJavaScriptが一番人気？
 status: Featured / Published
 date: 2019-07-01T04:00:00.000Z
 featuredImage: 'https://ucarecdn.com/94633346-778b-4474-8039-b18280ec73a3/'
 excerpt: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  アメリカで何故JavaScript（JS）が使われているのか、ここで簡単に説明します。
+
 categories:
-  - category: US直輸入テクノロジー情報
+  - category: Tech Info
 meta:
   canonicalLink: ''
   description: 何故日本では多様されないJavaScriptがアメリカで人気なのか？
   noindex: false
-  title: 何故アメリカではJSなのか？
+  title: アメリカではJavaScriptが一番人気？
 ---
 
-アメリカで何故JavaScript（JS）が使われているのか、簡単に説明します。
+アメリカで何故JavaScript（JS）が使われているのか、ここで簡単に説明します。
 
 アメリカでJavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。まず下記の日本のプログラミング言語別の年収ランキングをチェックしてください。データは[ビズリーチが発表した求人検索エンジン「スタンバイ」調べ](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)からです。
 
@@ -50,14 +48,14 @@ meta:
 
 ### JavaScriptがアメリカで多用される理由:
 
-1. ほとんどの代表的な大きなTECH企業がフロントエンドでJvaScriptを使用
+1. よりインタラクティブで、効率がよく、速いことからほとんどの代表的な大きなTECH企業がフロントエンドでJvaScriptを使用
 2. JavaScriptは元々ウェブ開発用に作られた言語であり、ウェブ開発をする際に一番能率の良い言語
 3. [バーチャルリアリティや](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%BB%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%86%E3%82%A3)、[インターネットオブシングス](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88)の分野で欠かせない言語となっており、同分野の開発で益々需要が高まっている
 
-
 ### 筆者が考えるJavaScriptが日本で多用されない理由:
 
-1. SEO（Search Engine Optimization-[サーチエンジンオプティマイゼーション](https://ja.wikipedia.org/wiki/%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E6%9C%80%E9%81%A9%E5%8C%96)）で何をするべきなのか、理解が浅い
+1. ReactJS, VueJS, ANgularJS、NodeJSがあまり使われていない
 2. ウェブの世界は目まぐるしく変化を遂げており、最新のテクノロジーを学ぶのに英語の壁有（説明が全て英語）
 3. 最新のウェブ開発情報がウェブ開発のエンジニアによって書かれてない為、最先端のプログラミング言語が使いたくても学べない
 
+<!-- 1. SEO（Search Engine Optimization-[サーチエンジンオプティマイゼーション](https://ja.wikipedia.org/wiki/%E6%A4%9C%E7%B4%A2%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E6%9C%80%E9%81%A9%E5%8C%96)）で何をするべきなのか、理解が浅い -->

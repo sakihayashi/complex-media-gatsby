@@ -1,18 +1,15 @@
 ---
 template: HomePage
 slug: ''
-title: アメリカ直輸入のWebプログラミング情報
+title: 最先端のWeb開発技術を知ろう、学ぼう
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 subtitle: 'アメリカ最先端のウェブ開発技術を学んで、使って、あなたもライバルを出し抜こう'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
 ---
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
 
-# NEWS
-
-View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
+# 最新のブログ
 
 # Features
 
@@ -26,7 +23,3 @@ View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-r
 * Instagram feed integration
 
 ## Get started
-
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)
