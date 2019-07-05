@@ -28,13 +28,13 @@ meta:
 
 簡単にプログラミング言語の説明をしましょう。
 
-双方の国で一位になっている[GO](https://ja.wikipedia.org/wiki/Perl)とは[DevOps](https://ja.wikipedia.org/wiki/DevOps)（デブオプス）に多用される言語で、C言語と類似。デブオプスは簡潔に言うと「開発チーム（Development）と運用チーム（Operations）がお互いに協調し合い、開発・運用するソフトウェア／システムによってビジネスの価値をより高め、確実かつ迅速にエンドユーザーに届け続ける」という概念のことです。
+双方の国で一位になっている[GO](https://ja.wikipedia.org/wiki/Perl)とは[DevOps](https://ja.wikipedia.org/wiki/DevOps)（デブオプス）に多用される言語で、C言語と類似。デブオプスは簡潔に言うと「開発チーム（Development）と運用チーム（Operations）がお互いに協調し合い、開発・運用するソフトウェア／システムによってビジネスの価値をより高め、確実かつ迅速にエンドユーザーに届け続ける」という概念のこと
 
-日本で2位の[Scala](https://ja.wikipedia.org/wiki/Scala)は、オブジェクト指向言語と関数型言語の特徴を持った言語で、サーバー言語です。米Twitterや米LinkedInなどが利用していることで知られます。日本国内ではランキングが高いのに対して、アメリカではランキングには入ってきません。
+日本で2位の[Scala](https://ja.wikipedia.org/wiki/Scala)は、オブジェクト指向言語と関数型言語の特徴を持った言語で、サーバー言語です。米Twitterや米LinkedInなどが利用していることで知られます。日本国内ではランキングが高いのに対して、アメリカではランキングには入らない
 
-日本で3位、アメリカでは７位の[Python](https://ja.wikipedia.org/wiki/Python)と6位の[R](https://ja.wikipedia.org/wiki/R%E8%A8%80%E8%AA%9E)は、AI、データサイエンスに使われる言語です。機械学習や統計分析の需要は高まっていますが、アメリカでは伸び率はあまり高くありません。
+日本で3位、アメリカでは７位の[Python](https://ja.wikipedia.org/wiki/Python)と6位の[R](https://ja.wikipedia.org/wiki/R%E8%A8%80%E8%AA%9E)は、AI、データサイエンスに使われる言語です。機械学習や統計分析の需要は高まっており、サーバー言語としてはもちろんアメリカでも人気です
 
-日本で4位の[Kotlin](https://ja.wikipedia.org/wiki/Kotlin)は日本では昨年比で求人数が5.3倍に増加していますが、アメリカではランキングに入りません。今年2019年にもGoogleがAndroidアプリ開発の公式言語として発表した為に人気になりました。「Kotlin」は、Androidアプリだけでなく、Webサービスの開発が出来、また[Java](https://ja.wikipedia.org/wiki/Java)の既存のライブラリが利用可能であり、「Java」に代わる新たな言語として、さらに需要が高まると見られます。これを受けか、「Java」の求人数は多いものの、ランキングには入ってきません。
+日本で4位の[Kotlin](https://ja.wikipedia.org/wiki/Kotlin)は日本では昨年比で求人数が5.3倍に増加していますが、アメリカではランキングに入りません。今年2019年にもGoogleがAndroidアプリ開発の公式言語として発表した為に人気になりました。「Kotlin」は、Androidアプリだけでなく、Webサービスの開発が出来、また[Java](https://ja.wikipedia.org/wiki/Java)の既存のライブラリが利用可能であり、「Java」に代わる新たな言語として、さらに需要が高まると見られます。この理由か、日本では「Java」の求人数は多いものの、ランキングには入ってきません。
 
 日本もアメリカでも5位、６位と安定した位置付けの[TypeScript](https://ja.wikipedia.org/wiki/TypeScript)は、マイクロソフト社が開発した言語で、「JavaScript」を拡張した静的型付け言語です。保守や運用がしやすい言語です。機能分割がしやすく設計されており、大規模アプリケーションのチーム開発用に開発されました。アメリカでもJavaScript->Java ->TypeScriptの順で需要の高い言語です。
 
