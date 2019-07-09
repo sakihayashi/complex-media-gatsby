@@ -24,23 +24,26 @@ meta:
 
 ## NodeJSとGatsbyのインストールはHomeBrewからがお勧め
 
-  1. [このリンク[(https://brew.sh/index_ja)からHomeBrew（ホームブリュー）をインストール
+  1. [このリンク](https://brew.sh/index_ja)からHomeBrew（ホームブリュー）をインストール
 
-## まずNodeJSとnpmをインストール
+## NodeJSとnpmをインストール
     
-    インストール後はターミナル、もしくはコマンドプロンプトを開いて下記のコマンドをうつ
+   インストール後はターミナル、もしくはコマンドプロンプトを開いて下記のコマンドをうつ
 
   1. まずはHomeBrewを最新のバージョンにします
 
     ```
     brew update
     ```
+
   2. 次にNodeJSをインストール
+
     ```
     brew install node
     ```
 
   3. 次にNodeJSとNpmのバージョンをチェック
+  
     ```
     node -v
     ```
@@ -68,6 +71,7 @@ meta:
 ## Gatsbyのスターターファイルを作成
 
 1. ターミナル、もしくはコマンドプロンプトを開きギットハブからスターターをダウンロード
+
 ```
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
