@@ -41,7 +41,6 @@ export default ({ children, meta, title }) => {
       `}
       
       render={data => {
-        console.log(children)
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
           subNav = {
