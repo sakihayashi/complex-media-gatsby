@@ -22,11 +22,11 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
         <Content source={body} />
       </div>
     </section>
-    <section className="section">
-              <div className="container">
-                <PostSection posts="{filteredPosts}" />
-              </div>
-            </section>
+    {/* <section className="section">
+      <div className="container">
+        <PostSection posts="{filteredPosts}" />
+      </div>
+    </section> */}
   </main>
 )
 
