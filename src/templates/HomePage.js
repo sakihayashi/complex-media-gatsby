@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import PostSection from '../components/PostSection'
+
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
@@ -20,13 +22,21 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
         <Content source={body} />
       </div>
     </section>
+    <section className="section">
+              <div className="container">
+                <PostSection posts="{filteredPosts}" />
+              </div>
+            </section>
   </main>
 )
 
 // Export Default HomePage for front-end
 const HomePage = ({ data: { page } }) => (
   <Layout meta={page.frontmatter.meta || false}>
+    {console.log('...page: ', ...page)}
+    
     <HomePageTemplate {...page} {...page.frontmatter} body={page.html} />
+
   </Layout>
 )
 

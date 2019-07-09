@@ -27,6 +27,8 @@ export const byDate = posts => {
  * @param {contentType} string
  */
 export const byCategory = (posts, title, contentType) => {
+  console.log('line 30 posts: ', posts);
+  
   const isCategory = contentType === 'postCategories'
   const byCategory = post =>
     post.categories &&
@@ -50,15 +52,17 @@ export const BlogIndexTemplate = ({
         posts && !!posts.length
           ? byCategory(byDate(posts), title, contentType)
           : []
+        console.log('line 53 filteredPosts: ', filteredPosts);
 
       let queryObj = location.search.replace('?', '')
-      queryObj = qs.parse(queryObj)
+      queryObj = qs.parse(queryObj)      
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
         filteredPosts = filteredPosts.filter(post =>
           post.frontmatter.title.toLowerCase().includes(searchTerm)
         )
+        
       }
 
       return (
@@ -80,6 +84,8 @@ export const BlogIndexTemplate = ({
           {!!posts.length && (
             <section className="section">
               <div className="container">
+                {console.log('filteredPosts: ', filteredPosts)
+                }
                 <PostSection posts={filteredPosts} />
               </div>
             </section>
