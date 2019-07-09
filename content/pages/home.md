@@ -2,7 +2,7 @@
 template: HomePage
 slug: ''
 title: 最先端のWeb開発技術を知ろう、学ぼう
-featuredImage: 'https://ucarecdn.com/6968c782-a318-4220-b80f-454ce21b5c35/'
+featuredImage: 'https://ucarecdn.com/22dc5777-7dd2-48b6-b72b-ab5013d520b8/'
 subtitle: アメリカ最先端のウェブ開発技術を学んで、使って、あなたもライバルを出し抜こう
 meta:
   description: This is a meta description.
