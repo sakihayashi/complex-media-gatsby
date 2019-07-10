@@ -33,6 +33,7 @@
     text-decoration: none;
     font-size: 1.3rem;
     color: #333;
+    font-family: Sawarabi Mincho;
 }
 
 main{
@@ -40,7 +41,9 @@ main{
 }
 
 .font-kokoro{
-    font-family: "Kokoro"
+    font-family: 'モトヤLシーダ3等幅', sans-serif;
+    font-size: 1.3rem;
+    color: #fe8678;
 }
 
 a:link {

@@ -8,7 +8,8 @@ import './HomePage.css'
 
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }) => {
+export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts, postTechInfo }) => {
+
   let postArray = posts.edges.map((post, index) => {
        
     return (
@@ -22,15 +23,19 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }
   })
 
   
-
   let postArrayGatsby = posts.edges.map((post, index) => {
+    const wordsPerMinute = 500; // Average case.
+    let minRead
+    let textLength = post.node.internal.content.length
+        minRead = Math.round(textLength / wordsPerMinute)
+       
     if(post.node.frontmatter.categories){    
-      if(post.node.frontmatter.categories[0].category == "Tech Info"){
+      if(post.node.frontmatter.categories[0].category == "Gatsbyチュートリアル"){
         return (
           <li className="post-list-item" key={index}>
             <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
-            <div className="post-list-text">{post.node.frontmatter.title}</div>
-            <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}</div>
+            <div className="post-list-text"><strong>{post.node.frontmatter.title}</strong></div>
+            <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}{' | '}{minRead}{' '}min{' '}read{' | '}{post.node.frontmatter.date}</div>
             <div className="post-list-desc">{post.node.excerpt}</div>
             </a>
           </li>
@@ -40,6 +45,24 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }
     }else{
       return ''
     }
+    
+  })
+
+  let postArrayTechInfo = postTechInfo.edges.map((post, index) => {
+    const wordsPerMinute = 500; // Average case.
+    let minRead
+    let textLength = post.node.internal.content.length
+        minRead = Math.round(textLength / wordsPerMinute)
+       
+        return (
+          <li className="post-list-item" key={index}>
+            <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
+            <div className="post-list-text"><strong>{post.node.frontmatter.title}</strong></div>
+            <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}{' | '}{minRead}{' '}min{' '}read{' | '}{post.node.frontmatter.date}</div>
+            <div className="post-list-desc">{post.node.excerpt}</div>
+            </a>
+          </li>
+        )
     
   })
 
@@ -67,18 +90,24 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }
       <ul className="post-list">{postArrayGatsby}</ul>
       </div>
     </section>
+    <section className="section">
+      <div className="container">New アメリカテクノロジーブログ
+      <ul className="post-list">{postArrayTechInfo}</ul>
+      </div>
+    </section>
+    
   </main>
   )
 
 }
 
 // Export Default HomePage for front-end
-const HomePage = ({ data: { data, posts } }) => {
+const HomePage = ({ data: { data, posts, postTechInfo } }) => {
   
   return (
     <Layout meta={data.frontmatter.meta || false}>
       
-      <HomePageTemplate {...data} {...data.frontmatter} body={data.html} posts={posts} />
+      <HomePageTemplate {...data} {...data.frontmatter} body={data.html} posts={posts} postTechInfo={postTechInfo} />
       
     </Layout>
   )
@@ -119,6 +148,30 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+          }
+          internal{
+            content
+          }
+        }
+      }
+    }
+    postTechInfo: allMarkdownRemark(
+      filter: {frontmatter: {categories: {elemMatch: {category: {eq: "Tech Info"}}}}, 
+      fields: {contentType: {eq: "posts"}}}
+      ) {
+      edges {
+        node {
+          excerpt
+          internal {
+            content
+          }
+          frontmatter {
+            categories {
+              category
+            }
+            featuredImage
+            date
+            title
           }
         }
       }
