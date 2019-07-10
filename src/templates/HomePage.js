@@ -13,7 +13,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }
        
     return (
       <li className="post-list-item" key={index}>
-        <a target="_blank" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
+        <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
         <div className="post-list-text">{post.node.frontmatter.title}</div>
         <div className="post-list-text font-kokoro">{post.node.frontmatter.title}</div>
         </a>
@@ -28,7 +28,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts }
       if(post.node.frontmatter.categories[0].category == "Tech Info"){
         return (
           <li className="post-list-item" key={index}>
-            <a target="_blank" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
+            <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
             <div className="post-list-text">{post.node.frontmatter.title}</div>
             <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}</div>
             <div className="post-list-desc">{post.node.excerpt}</div>
