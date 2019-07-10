@@ -94,8 +94,11 @@ export const BlogIndexTemplate = ({
 )
 
 // Export Default BlogIndex for front-end
-const BlogIndex = ({ data: { page, posts, postCategories } }) => (
-  <Layout
+const BlogIndex = ({ data: { page, posts, postCategories } }) => {
+  console.log(page, posts, postCategories)
+
+  return (
+    <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
@@ -115,7 +118,8 @@ const BlogIndex = ({ data: { page, posts, postCategories } }) => (
       }))}
     />
   </Layout>
-)
+  )
+}
 
 export default BlogIndex
 
@@ -138,7 +142,6 @@ export const pageQuery = graphql`
         featuredImage
       }
     }
-
     posts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }

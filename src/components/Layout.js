@@ -41,6 +41,7 @@ export default ({ children, meta, title }) => {
       `}
       
       render={data => {
+        //console.log(children)
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
           subNav = {
@@ -60,6 +61,7 @@ export default ({ children, meta, title }) => {
               {title}
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
+              <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet" />
               {/* Add font link tags here */}
             </Helmet>
 
@@ -79,7 +81,7 @@ export default ({ children, meta, title }) => {
             <Nav subNav={subNav} />
 
             <Fragment>{children}</Fragment>
-
+            
             <Footer />
           </Fragment>
         )
