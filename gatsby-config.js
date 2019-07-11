@@ -92,8 +92,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'yellowcake',
-        short_name: 'yellowcake',
+        name: 'Flamingod News',
+        short_name: 'Flamingod',
         start_url: '/',
         background_color: '#00C2BD',
         theme_color: '#00C2BD',

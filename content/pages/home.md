@@ -6,7 +6,7 @@ featuredImage: 'https://ucarecdn.com/22dc5777-7dd2-48b6-b72b-ab5013d520b8/'
 subtitle: アメリカ最先端のウェブ開発技術を学んで、使って、あなたもライバルを出し抜こう
 meta:
   description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  title: Flamingod News
 ---
 
 # 最新のアメリカのウェブプログラミングについてのブログ

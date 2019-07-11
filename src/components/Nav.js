@@ -47,7 +47,9 @@ export class Navigation extends Component {
         <div className="Nav--Container container">
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
+            
           </Link>
+          <span className="site-name">Flamingod News</span>
           <div className="Nav--Links">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about/">About</NavLink>

@@ -4,66 +4,36 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import NewsDigest from '../components/NewsDigest'
 import './HomePage.css'
 
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts, postTechInfo }) => {
+export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts, postTechInfo, postGatsby }) => {
 
   let postArray = posts.edges.map((post, index) => {
        
     return (
-      <li className="post-list-item" key={index}>
-        <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
-        <div className="post-list-text">{post.node.frontmatter.title}</div>
-        <div className="post-list-text font-kokoro">{post.node.frontmatter.title}</div>
-        </a>
-      </li>
+      <NewsDigest {...post}/>
+      // <NewsDigest {...post} key={index}/>
     )
   })
 
   
-  let postArrayGatsby = posts.edges.map((post, index) => {
-    const wordsPerMinute = 500; // Average case.
-    let minRead
-    let textLength = post.node.internal.content.length
-        minRead = Math.round(textLength / wordsPerMinute)
-       
-    if(post.node.frontmatter.categories){    
-      if(post.node.frontmatter.categories[0].category == "Gatsbyチュートリアル"){
+  let postArrayGatsby = postGatsby.edges.map((post, index) => {
+    
         return (
-          <li className="post-list-item" key={index}>
-            <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
-            <div className="post-list-text"><strong>{post.node.frontmatter.title}</strong></div>
-            <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}{' | '}{minRead}{' '}min{' '}read{' | '}{post.node.frontmatter.date}</div>
-            <div className="post-list-desc">{post.node.excerpt}</div>
-            </a>
-          </li>
+          <NewsDigest {...post}/>
         )
-      }
-      
-    }else{
-      return ''
-    }
+
     
   })
 
   let postArrayTechInfo = postTechInfo.edges.map((post, index) => {
-    const wordsPerMinute = 500; // Average case.
-    let minRead
-    let textLength = post.node.internal.content.length
-        minRead = Math.round(textLength / wordsPerMinute)
        
         return (
-          <li className="post-list-item" key={index}>
-            <a target="_blank" rel="noopener noreferrer" href={post.node.frontmatter.featuredImage}><img className="post-list-img" src={post.node.frontmatter.featuredImage} />
-            <div className="post-list-text"><strong>{post.node.frontmatter.title}</strong></div>
-            <div className="post-list-text font-kokoro">{post.node.frontmatter.categories[0].category}{' | '}{minRead}{' '}min{' '}read{' | '}{post.node.frontmatter.date}</div>
-            <div className="post-list-desc">{post.node.excerpt}</div>
-            </a>
-          </li>
+          <NewsDigest {...post}/>
         )
-    
   })
 
   return (
@@ -102,12 +72,12 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, posts, 
 }
 
 // Export Default HomePage for front-end
-const HomePage = ({ data: { data, posts, postTechInfo } }) => {
+const HomePage = ({ data: { data, posts, postTechInfo, postGatsby } }) => {
   
   return (
     <Layout meta={data.frontmatter.meta || false}>
       
-      <HomePageTemplate {...data} {...data.frontmatter} body={data.html} posts={posts} postTechInfo={postTechInfo} />
+      <HomePageTemplate {...data} {...data.frontmatter} body={data.html} posts={posts} postTechInfo={postTechInfo} postGatsby={postGatsby} />
       
     </Layout>
   )
@@ -134,9 +104,11 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 5
     ) {
       edges {
         node {
+          id
           excerpt
           fields {
             slug
@@ -162,6 +134,33 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          fields {
+            slug
+          }
+          internal {
+            content
+          }
+          frontmatter {
+            categories {
+              category
+            }
+            featuredImage
+            date
+            title
+          }
+        }
+      }
+    }
+    postGatsby: allMarkdownRemark(
+      filter: {frontmatter: {categories: {elemMatch: {category: {eq: "Gatsbyチュートリアル"}}}}, 
+      fields: {contentType: {eq: "posts"}}}
+      ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
           internal {
             content
           }

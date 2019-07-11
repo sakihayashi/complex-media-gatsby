@@ -1,16 +1,16 @@
 .Nav {
-  background: white;
+  background: rgba(105, 221, 226, 0.3);;
   position: sticky;
   top: 0;
   z-index: 1;
-  border-bottom: 1px solid var(--lightGrey);
+  /* border-bottom: 1px solid var(--lightGrey); */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
 .Nav--Container {
   display: flex;
   align-items: center;
-  height: 6rem;
+  height: 8rem;
 }
 
 .Nav--Links {
@@ -184,6 +184,12 @@
     font-size: 1.5rem;
     width: auto;
   }
+}
+
+.site-name{
+  font-size: 2rem;
+  color: #00c2bd;
+  padding-right: 2rem;
 }
 
 @keyframes Nav--Link {
