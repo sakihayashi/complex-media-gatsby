@@ -3,12 +3,10 @@ template: SinglePost
 title: Gatsbyのテクノロジーとは？
 status: Published
 date: '2019-07-05'
-featuredImage: >-
-  https://ucarecdn.com/d6ad4f3e-40a1-49cf-8cf0-f06a25d08544/-/crop/1690x1484/0,882/-/preview/
-excerpt: >-
-  NextJSと並んで注目されているGatsbyがスタティックウェブサイトの利点を全て網羅している、そのテクノロジーの内容を紹介
+featuredImage: 'https://ucarecdn.com/5f43ee37-2d49-4465-989d-3eec3d7d174c/'
+excerpt: NextJSと並んで注目されているGatsbyがスタティックウェブサイトの利点を全て網羅している、そのテクノロジーの内容を紹介
 categories:
-- category: Gatsbyチュートリアル
+  - category: Gatsbyチュートリアル
 meta:
   description: スタティックウェブサイトの利点を全て網羅していると言うGatsbyが使うテクノロジーの内容を紹介。
   title: Gatsbyのテクノロジーとは？
