@@ -3,7 +3,7 @@ import React from 'react'
 import './Footer.css'
 
 export default () => (
-  <div>
+  <div className="padding-top footer-background">
     <h2 className="taCenter">
       Follow us{' '}
       <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>

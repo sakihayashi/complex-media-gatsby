@@ -1,7 +1,7 @@
 :root {
   --primary: #00c2bd;
   --secondary: #222;
-  --lightGrey: whitesmoke;
+  --lightGrey: rgba(105, 221, 226, .1);
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
@@ -30,7 +30,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  background: var(--lightGrey);
+  /* background: var(--lightGrey); */
 }
 
 body {
@@ -44,6 +44,18 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+main{
+  background-color: rgba(105, 221, 226, .1);
+}
+
+.padding-top{
+  padding-top: 50px;
+}
+
+.footer-background{
+  background: rgba(105, 221, 226, .1);
 }
 
 a {
@@ -154,7 +166,8 @@ blockquote {
 
 .section {
   width: 100%;
-  padding: 5rem 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   border-bottom: 1px solid #f1f1f1;
 }
 .section:last-child {
