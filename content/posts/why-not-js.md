@@ -3,7 +3,7 @@ template: SinglePost
 title: アメリカではJavaScriptが一番人気？
 status: Featured / Published
 date: '2019-07-01'
-featuredImage: 'https://ucarecdn.com/94633346-778b-4474-8039-b18280ec73a3/'
+featuredImage: 'https://ucarecdn.com/1a386b89-596e-4bfc-b350-d72e1bdf516d/'
 excerpt: >-
   アメリカで何故JavaScript（JS）が使われているのか、ここで簡単に説明します。
 
@@ -16,13 +16,16 @@ meta:
   title: アメリカではJavaScriptが一番人気？
 ---
 
+![AngulerJS React JS and Vue JS logos](https://ucarecdn.com/1a386b89-596e-4bfc-b350-d72e1bdf516d/ "JavaScript static page generator library and frameworks")
+
 アメリカで何故JavaScript（JS）が使われているのか、ここで簡単に説明します。
 
 アメリカでJavaScriptがどれだけ必要とされているのかわかるのは、恐らくこの二つのランキングでしょう。まず下記の日本のプログラミング言語別の年収ランキングをチェックしてください。データは[ビズリーチが発表した求人検索エンジン「スタンバイ」調べ](https://www.bizreach.co.jp/pressroom/pressrelease/2018/0807.html)からです。
 
 ![日本のプログラミング言語別年収 求人検索エンジン「スタンバイ」調べ](https://ucarecdn.com/108c5306-dbb7-4ba0-aa41-52c5556c6f52/ "プログラミング言語別年収")
 
-アメリカのプログラミング言語別年収 求人検索エンジン「DICE」調べ
+アメリカのプログラミング言語別年収 求
+人検索エンジン「DICE」調べ
 
 ![アメリカのプログラミング言語別年収 求人検索エンジン「DICE」調べ](https://ucarecdn.com/37ffac8c-46e1-45d1-a9cf-7f320a9967cc/ "アメリカのプログラミング言語別年収 求人検索エンジン「DICE」調べ")
 

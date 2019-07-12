@@ -4,7 +4,7 @@ title: 何故JavaScriptがアメリカで人気か
 status: Published
 date: '2019-07-03'
 featuredImage: >-
-  https://ucarecdn.com/b89e588f-5659-47e9-9caa-6be0ad058572/-/crop/1690x1728/0,638/-/preview/
+  https://ucarecdn.com/1a386b89-596e-4bfc-b350-d72e1bdf516d/
 excerpt: This is an excerpt of Post Two
 categories:
   - category: Tech Info
@@ -12,6 +12,8 @@ meta:
   description: test meta description
   title: 何故JavaScriptがアメリカで人気か
 ---
+
+![AngulerJS React JS and Vue JS logos](https://ucarecdn.com/1a386b89-596e-4bfc-b350-d72e1bdf516d/ "JavaScript static page generator library and frameworks")
 
 このブログでは何故JavaScriptがアメリカで人気なのか、その理由の一つ「ReactJS, VueJS, ANgularJS、NodeJS」について簡単に説明します。
 

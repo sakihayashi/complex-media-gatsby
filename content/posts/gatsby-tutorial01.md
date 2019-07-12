@@ -31,11 +31,10 @@ meta:
 1. まずはHomeBrewを最新のバージョンにします
 
 
-````
-    ```
-    brew update
-    ```
-````
+  ```
+  brew update
+  ```
+
 
 2. 次にNodeJSをインストール
 
