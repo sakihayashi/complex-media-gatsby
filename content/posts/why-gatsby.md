@@ -3,18 +3,17 @@ template: SinglePost
 title: 今一番速いJSは？
 status: Published
 date: '2019-07-06'
-featuredImage: 'https://ucarecdn.com/bd5d1edc-73be-488a-9d50-8ec28f5ab6a9/'
+featuredImage: 'https://ucarecdn.com/50261905-a858-4e60-85f0-7258413f259c/'
 excerpt: >-
-  This is placeholder text that our web designers put here to make sure words
-  appear properly on your website. This text is going to be replaced once the
-  website is completed. You are currently reading text that is written in
-  English, not any other language.
+  Gatsbyはどうして速いのでしょうか？今回はその理由を説明します。理由はGatsbyは現状一番速いと考えられているテクノロジーを使って作られているからです。
 categories:
 - category: Gatsbyチュートリアル
 meta:
   description: GatsbyJSがNextJSと並んで今注目されている理由
   title: 今一番速いJSは？
 ---
+
+![Gatsby JS logo image](https://ucarecdn.com/50261905-a858-4e60-85f0-7258413f259c/ "Gatsby JS ")
 
 [Gatsby](https://www.gatsbyjs.org/)はまだまだ認知度の浅いフレームワークですが、NextJSと並び少しずつ人気が出てきています。その理由は何でしょう？
 
@@ -36,10 +35,10 @@ meta:
 
 **ReactJSがHTMLとCSSに生成した後に、Deploy（デプロイ）する際のエラーを最小限にしたフレームワーク**
 
-先ほど[サーバーサイドレンダリングが最新の機器を使ってるユーザーにとっては速い](/blog/tech)、と言う説明をしました。しかしサーバーサイドでレンダリングさせる言語を書くのはHTMLタグをかけるようになるほど容易ではありませんし、実際に問題になるのはこのデプロイの作業なのです。デプロイはエラーが多く発生する上、非常に解決しにくいのです。ですから、デプロイ専門のエンジニアには高い給料が払われ、ビギナーのウェブ開発者に複雑なアプリは難しくなっている
+先ほど[サーバーサイドレンダリングが最新の機器を使ってるユーザーにとっては速い](/blog/tech)、と言う説明をしました。しかしサーバーサイドでレンダリングさせる言語を書くのはHTMLタグをかけるようになるほど容易ではありませんし、実際に問題になるのはこのデプロイの作業なのです。デプロイはエラーが多く発生する上、非常に解決しにくいのです。ですから、デプロイ専門のエンジニアには高い給料が払われ、ビギナーのウェブ開発者に複雑なアプリは難しくなっている。
 
-Gatsbyはもちろんウェブサイトとしても速いのですが、ウェブ開発を能率よくさせる意味でも「速い」のです
+Gatsbyはもちろんウェブサイトとしても速いのですが、ウェブ開発を能率よくさせる意味でも「速い」のです。
 
-ウェブサイトの速さをどうやって知ることが出来るのか？この[グーグルスピードインサイツ](https://developers.google.com/speed/pagespeed/insights/)にURLwoコピペして速さを測定してみましょう。
+ウェブサイトの速さをどうやって知ることが出来るのか？この[グーグルスピードインサイツ](https://developers.google.com/speed/pagespeed/insights/)にURLを入力して速さを測定してデータを分析してみましょう。データの分析方法についても後にブログで紹介します。
 
-このウェブサイトもGatsbyで作られています
+もちろん、このウェブサイトもGatsbyで作られています

@@ -3,7 +3,7 @@ template: SinglePost
 title: Gatsby使い方　Step1
 status: Featured / Published
 date: '2019-07-01'
-featuredImage: 'https://ucarecdn.com/157877ea-a2cb-49b6-8130-768fbe1a60a7/'
+featuredImage: 'https://ucarecdn.com/50261905-a858-4e60-85f0-7258413f259c/'
 excerpt: ' Gatsby使い方　Step1ー　このページはGatsbyのインストールの仕方を紹介　NodeJS（HomeBrew）をインストールした後に、Gatsbyとそのスターターをインストールして実際にサイトを動かします'
 categories:
   - category: Gatsbyチュートリアル
@@ -13,6 +13,9 @@ meta:
   noindex: false
   title: Gatsby使い方　Step1
 ---
+
+![Gatsby JS logo image](https://ucarecdn.com/50261905-a858-4e60-85f0-7258413f259c/ "Gatsby JS ")
+
 準備　コマンドラインを使えるようになろう
 
 マックの方は[このリンク](https://techacademy.jp/magazine/5155)　｜　ウィンドウズの方は[このリンク](https://techacademy.jp/magazine/5318)の参照をお勧めします

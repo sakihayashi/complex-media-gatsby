@@ -6,7 +6,7 @@ export default () => (
   <div className="padding-top footer-background">
     <h2 className="taCenter">
       Follow us{' '}
-      <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>
+      <a href="https://twitter.com/FlamingodN?lang=en">@FlamingodN</a>
     </h2>
     <br />
     {/* <InstagramFeed count="8" /> */}
