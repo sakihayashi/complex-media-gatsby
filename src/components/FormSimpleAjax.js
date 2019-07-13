@@ -25,12 +25,17 @@ class Form extends React.Component {
     if (this.state.disabled) return
 
     const form = e.target
+    console.log('e.target: ', e.target);
+    
     const data = serialize(form)
+    console.log('data: ', data);
     this.setState({ disabled: true })
     fetch(form.action + '?' + stringify(data), {
       method: 'POST'
     })
       .then(res => {
+        console.log('form submitted: ', res);
+        
         if (res.ok) {
           return res
         } else {
