@@ -21,16 +21,5 @@ const NewsDigest = (props) => {
     )
 }
 
-{/* <Link
-          to={to}
-          className={`NavLink ${
-            to === this.state.currentPath ? 'active' : ''
-          } ${className}`}
-          onClick={this.handleLinkClick}
-          {...props}
-        >
-          {children}
-        </Link> */}
-
 
 export default NewsDigest
