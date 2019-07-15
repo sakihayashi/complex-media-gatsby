@@ -7,7 +7,7 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Contact',
+    name: '',
     subject: '', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your enquiry, we will get back to you soon',
@@ -24,44 +24,42 @@ class Form extends React.Component {
     e.preventDefault()
     if (this.state.disabled) return
 
-    const form = e.target
-    console.log('e.target: ', e.target);
-    
+    const form = e.target    
     const data = serialize(form)
     console.log('data: ', data);
     this.setState({ disabled: true })
     console.log(form.action)
-    fetch('https://hooks.zapier.com/hooks/catch/5339764/oo4u5er/' + '?' + stringify(data), {
-      method: 'POST'
-    })
-      .then(res => {
-        console.log('form submitted: ', res);
+    // fetch('https://hooks.zapier.com/hooks/catch/5339764/oo4u5er/' + '?' + stringify(data), {
+    //   method: 'POST'
+    // })
+    //   .then(res => {
+    //     console.log('form submitted: ', res);
         
-        if (res.ok) {
-          return res
-        } else {
-          throw new Error('Network error')
-        }
-      })
-      .then(() => {
-        form.reset()
-        this.setState({
-          alert: this.props.successMessage,
-          disabled: false
-        })
-      })
-      .catch(err => {
-        console.error(err)
-        this.setState({
-          disabled: false,
-          alert: this.props.errorMessage
-        })
-      })
+    //     if (res.ok) {
+    //       return res
+    //     } else {
+    //       throw new Error('Network error')
+    //     }
+    //   })
+    //   .then(() => {
+    //     form.reset()
+    //     this.setState({
+    //       alert: this.props.successMessage,
+    //       disabled: false
+    //     })
+    //   })
+    //   .catch(err => {
+    //     console.error(err)
+    //     this.setState({
+    //       disabled: false,
+    //       alert: this.props.errorMessage
+    //     })
+    //   })
   }
 
   render() {
     const { name, subject, action } = this.props
-    console.log(name)
+    console.log(action, subject, name)
     return (
       <Fragment>
         <Helmet>
@@ -69,12 +67,12 @@ class Form extends React.Component {
         </Helmet>
         <form
           className="Form"
-          name={'Contact'}
+          name={name}
           action={action}
           method="post"
           onSubmit={this.handleSubmit}
           data-netlify="true"
-          netlify-recaptcha="true"
+          data-netlify-recaptcha='true'
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
@@ -170,13 +168,16 @@ class Form extends React.Component {
             data-sitekey="6LfKN3kUAAAAAGIM1CbXmaRZx3LIh_W2twn1tzkA"
           />
           {!!subject && <input type="hidden" name="subject" value={subject} />}
-          <input type="hidden" name="form-name" value={'Contact'} />
+          <input type="hidden" name="form-name" value={name} />
           <input
             className="Button Form--SubmitButton"
             type="submit"
             value="Enquire"
             disabled={this.state.disabled}
           />
+          <div>
+            <div data-netlify-recaptcha='true'></div>
+          </div>
         </form>
       </Fragment>
     )
