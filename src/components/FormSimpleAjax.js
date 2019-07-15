@@ -29,32 +29,32 @@ class Form extends React.Component {
     console.log('data: ', data);
     this.setState({ disabled: true })
     console.log(form.action)
-    // fetch('https://hooks.zapier.com/hooks/catch/5339764/oo4u5er/' + '?' + stringify(data), {
-    //   method: 'POST'
-    // })
-    //   .then(res => {
-    //     console.log('form submitted: ', res);
+    fetch(form.action + '?' + stringify(data), {
+      method: 'POST'
+    })
+      .then(res => {
+        console.log('form submitted: ', res);
         
-    //     if (res.ok) {
-    //       return res
-    //     } else {
-    //       throw new Error('Network error')
-    //     }
-    //   })
-    //   .then(() => {
-    //     form.reset()
-    //     this.setState({
-    //       alert: this.props.successMessage,
-    //       disabled: false
-    //     })
-    //   })
-    //   .catch(err => {
-    //     console.error(err)
-    //     this.setState({
-    //       disabled: false,
-    //       alert: this.props.errorMessage
-    //     })
-    //   })
+        if (res.ok) {
+          return res
+        } else {
+          throw new Error('Network error')
+        }
+      })
+      .then(() => {
+        form.reset()
+        this.setState({
+          alert: this.props.successMessage,
+          disabled: false
+        })
+      })
+      .catch(err => {
+        console.error(err)
+        this.setState({
+          disabled: false,
+          alert: this.props.errorMessage
+        })
+      })
   }
 
   render() {
