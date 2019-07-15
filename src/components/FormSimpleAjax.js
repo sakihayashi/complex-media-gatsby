@@ -30,9 +30,7 @@ class Form extends React.Component {
     this.setState({ disabled: true })
     console.log(form.action)
     fetch(form.action + '?' + stringify(data), {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": this.props.name, data })
+      method: 'POST'
     })
       .then(res => {
         console.log('form submitted: ', res);
@@ -71,7 +69,7 @@ class Form extends React.Component {
           className="Form"
           name={name}
           action={action}
-          method="post"
+          // method="post"
           onSubmit={this.handleSubmit}
           data-netlify="true"
           data-netlify-recaptcha='true'
