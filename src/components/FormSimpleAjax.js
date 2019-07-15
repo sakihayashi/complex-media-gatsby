@@ -7,7 +7,7 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Simple Form Ajax',
+    name: 'Contact',
     subject: '', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your enquiry, we will get back to you soon',
@@ -30,7 +30,8 @@ class Form extends React.Component {
     const data = serialize(form)
     console.log('data: ', data);
     this.setState({ disabled: true })
-    fetch(form.action + '?' + stringify(data), {
+    console.log(form.action)
+    fetch('https://hooks.zapier.com/hooks/catch/5339764/oo4u5er/' + '?' + stringify(data), {
       method: 'POST'
     })
       .then(res => {
@@ -60,7 +61,7 @@ class Form extends React.Component {
 
   render() {
     const { name, subject, action } = this.props
-
+    console.log(name)
     return (
       <Fragment>
         <Helmet>
@@ -68,10 +69,11 @@ class Form extends React.Component {
         </Helmet>
         <form
           className="Form"
-          name={name}
+          name={'Contact'}
           action={action}
+          method="post"
           onSubmit={this.handleSubmit}
-          data-netlify=""
+          data-netlify="true"
           netlify-recaptcha=""
         >
           {this.state.alert && (
@@ -168,7 +170,7 @@ class Form extends React.Component {
             data-sitekey="6LfKN3kUAAAAAGIM1CbXmaRZx3LIh_W2twn1tzkA"
           />
           {!!subject && <input type="hidden" name="subject" value={subject} />}
-          <input type="hidden" name="form-name" value={name} />
+          <input type="hidden" name="form-name" value={'Contact'} />
           <input
             className="Button Form--SubmitButton"
             type="submit"
