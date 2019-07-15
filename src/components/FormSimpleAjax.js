@@ -74,7 +74,7 @@ class Form extends React.Component {
           method="post"
           onSubmit={this.handleSubmit}
           data-netlify="true"
-          netlify-recaptcha=""
+          netlify-recaptcha="true"
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
