@@ -30,7 +30,9 @@ class Form extends React.Component {
     this.setState({ disabled: true })
     console.log(form.action)
     fetch(form.action + '?' + stringify(data), {
-      method: 'POST'
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": this.props.name, data })
     })
       .then(res => {
         console.log('form submitted: ', res);
