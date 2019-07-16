@@ -1,3 +1,4 @@
+
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { stringify } from 'qs'
@@ -24,17 +25,13 @@ class Form extends React.Component {
     e.preventDefault()
     if (this.state.disabled) return
 
-    const form = e.target    
+    const form = e.target
     const data = serialize(form)
-    console.log('data: ', data);
     this.setState({ disabled: true })
-    console.log(form.action)
     fetch(form.action + '?' + stringify(data), {
       method: 'POST'
     })
       .then(res => {
-        console.log('form submitted: ', res);
-        
         if (res.ok) {
           return res
         } else {
@@ -59,7 +56,7 @@ class Form extends React.Component {
 
   render() {
     const { name, subject, action } = this.props
-    console.log(action, subject, name)
+
     return (
       <Fragment>
         <Helmet>
@@ -69,10 +66,9 @@ class Form extends React.Component {
           className="Form"
           name={name}
           action={action}
-          // method="post"
           onSubmit={this.handleSubmit}
           data-netlify="true"
-          data-netlify-recaptcha=""
+          netlify-recaptcha=""
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
@@ -175,9 +171,6 @@ class Form extends React.Component {
             value="Enquire"
             disabled={this.state.disabled}
           />
-          <div>
-            <div data-netlify-recaptcha=""></div>
-          </div>
         </form>
       </Fragment>
     )
