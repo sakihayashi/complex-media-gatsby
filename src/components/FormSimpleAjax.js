@@ -71,8 +71,8 @@ class Form extends React.Component {
           action={action}
           // method="post"
           onSubmit={this.handleSubmit}
-          data-netlify="true"
-          data-netlify-recaptcha="true"
+          data-netlify=""
+          data-netlify-recaptcha=""
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
@@ -176,7 +176,7 @@ class Form extends React.Component {
             disabled={this.state.disabled}
           />
           <div>
-            <div data-netlify-recaptcha='true'></div>
+            <div data-netlify-recaptcha="true"></div>
           </div>
         </form>
       </Fragment>
