@@ -176,7 +176,7 @@ class Form extends React.Component {
             disabled={this.state.disabled}
           />
           <div>
-            <div data-netlify-recaptcha="true"></div>
+            <div data-netlify-recaptcha=""></div>
           </div>
         </form>
       </Fragment>
